@@ -1,0 +1,1 @@
+# Educational, insecure Rails application
