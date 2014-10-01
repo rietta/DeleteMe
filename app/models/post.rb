@@ -15,12 +15,16 @@ class Post < ActiveRecord::Base
 
   validates :title, presence: true, length: {maximum: 255}
 
-  def edit_access?(user)
+  def edit_access? user
     if user and user.id == user_id
       true
     else
       false
     end
+  end
+
+  def read_access? user
+    edit_access? user
   end
 
 end
