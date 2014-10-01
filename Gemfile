@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'brakeman'
 gem 'annotate'
+gem 'tinymce-rails'
